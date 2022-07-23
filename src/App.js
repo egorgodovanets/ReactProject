@@ -1,20 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 import { Star } from './components/Star/star';
+import { Header } from './components/Header/Header';
 
 const productArray = [
   {
-    id: 2,
     name: 'Product 2',
     isFilled: true
   },
   {
-    id: 3,
     name: 'Product 3',
     isFilled: true
   },
   {
-    id: 3,
+    name: 'Product 3',
+    isFilled: false
+  },{
+    name: 'Product 3',
+    isFilled: false
+  },{
+    name: 'Product 3',
+    isFilled: false
+  },{
     name: 'Product 3',
     isFilled: false
   }
@@ -23,11 +30,14 @@ const productArray = [
 
 function App() {
 
-let newArray = productArray.map(product => (<Star id={product.id} name={product.name} isFilled={product.isFilled}/>));
+let newArray = productArray.map((product, index) => (<Star id={index+1} name={product.name} isFilled={product.isFilled}/>));
 
   return (
     <div className="App">
-      {newArray}
+      <Header length={newArray.length}/>
+      <div className='star-container'>
+        {newArray}
+      </div>
     </div>
   );
 }
