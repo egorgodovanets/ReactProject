@@ -20,3 +20,8 @@
     width: 100px;
     height: 100px;
 }
+
+.App {
+    display: flex;
+    flex-direction: row;
+}
