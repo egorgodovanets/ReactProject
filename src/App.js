@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import { Star } from './components/Star/star';
 import { Header } from './components/Header/Header';
@@ -30,7 +30,7 @@ const productArray = [
 
 function App() {
 
-let newArray = productArray.map((product, index) => (<Star id={index+1} name={product.name} isFilled={product.isFilled}/>));
+let newArray = productArray.map((product, index) => (<Star key={index+1} id={index+1} name={product.name} isFilled={product.isFilled}/>));
 
   return (
     <div className="App">
