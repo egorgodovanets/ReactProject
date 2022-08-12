@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: blanchedalmond
+
+}
+
+.App {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: teal;
+  .home {
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .product {  
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .heart-count {
+    display: flex;
+  }
+  .heart-icon {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+  .like-count{
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .backet-inBacket{
+    display: flex;
+  }
+  .backet-icon {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+  .backet-count {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.product-item {
+  margin: 30px;
+  background-color: grey;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  strong {
+    color: white;
+    text-align: center;
+  }
+  .description {
+    color:white;
+    text-align: center;
+    margin: 10px;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .likes {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .in-backet {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
